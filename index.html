@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenny Posh Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="container-fluid">
+            <div class="logo">MyPortfolio</div>
+            <button class="navbar-toggler" onclick="toggleMenu()">
+                <span>☰</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#portfolio" onclick="closeMenu()">Collections</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 hero-text">
+                    <h1>Hello, I'm <span class="accent">EZE JOY NMESOMACHI</span></h1>
+                    <p>A Passionate Female Web Developer & Designer</p>
+                    <a href="#contact" class="btn">Hire Me</a>
+                </div>
+
+                <div class="col-lg-6 col-md-12 hero-img">
+                    <img src="1.jpg.jpg" alt="Profile Photo" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I am a dedicated female developer with strong passion for building modern, elegant, and responsive websites.
+                I combine creativity with clean code to produce highly professional digital experiences.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="skill-box">
+                        <p>HTML</p>
+                        <div class="bar"><span style="width: 65%;"></span></div>
+                    </div>
+
+                    <div class="skill-box">
+                        <p>CSS</p>
+                        <div class="bar"><span style="width: 40%;"></span></div>
+                    </div>
+
+                    <div class="skill-box">
+                        <p>JavaScript</p>
+                        <div class="bar"><span style="width: 40%;"></span></div>
+                    </div>
+
+                    <div class="skill-box">
+                        <p>Python (Flask)</p>
+                        <div class="bar"><span style="width: 30%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED COLLECTION SECTION -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Collections</h2>
+
+            <div class="project-container">
+
+                <div class="project-card">
+                    <img src="perfume.jpg" alt="Perfume Sales" class="service-img">
+                    <h3>Luxury Perfume Collection</h3>
+                    <p>Handpicked premium fragrances for modern ladies.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="clothes.jpg" alt="Clothing" class="service-img">
+                    <h3>Elegant Clothing Line</h3>
+                    <p>Trendy outfits for classy, confident, and stylish women.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="footwear.jpg" alt="Footwears" class="service-img">
+                    <h3>Footwear & Accessories</h3>
+                    <p>Comfortable and fashionable shoes for every occasion.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+
+            <div class="service-container">
+
+                <div class="service-box">
+                    <img src="perfume.jpg" alt="Perfume Sales" class="service-img">
+                    <h3>Perfume Sales</h3>
+                    <p>Quality perfumes for both men and women, long-lasting and affordable.</p>
+                </div>
+
+                <div class="service-box">
+                    <img src="bodyspray.jpg" alt="Body Spray" class="service-img">
+                    <h3>Body Spray</h3>
+                    <p>Refreshing body sprays with unique fragrances that keep you confident all day.</p>
+                </div>
+
+                <div class="service-box">
+                    <img src="clothes.jpg" alt="Clothing" class="service-img">
+                    <h3>Clothing</h3>
+                    <p>Trendy and stylish clothing for ladies with premium fabrics and perfect fitting.</p>
+                </div>
+
+                <div class="service-box">
+                    <img src="footwear.jpg" alt="Footwears" class="service-img">
+                    <h3>Footwears</h3>
+                    <p>Beautiful footwear collections including heels, flats, and casual shoes.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Jenny Posh. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
